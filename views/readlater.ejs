@@ -1,0 +1,14 @@
+<%- include("./header.ejs") %>
+<h1>Catch up where you left...</h1>
+<div class="readlaterlist">
+<% if (readlater) { %>
+    <% readlater.forEach(blog => { %>
+      <h3> <%= blog.title %></h3>
+      <p> <%= blog.body %></p>
+      <a href="readlater/remove/<%= blog._id %>" class="btn btn-sm btn-outline-danger">Remove</a>
+       <hr>
+    <% }) %>
+  <% } else { %>
+    <p>No blogs here...</p>
+  <% } %>
+</div>

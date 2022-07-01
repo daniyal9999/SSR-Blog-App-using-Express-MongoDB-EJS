@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px ,"fantasy","Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #00B7FF;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3{
+  color: #00B7FF;
+}
+
+#footer {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.readlaterlist{
+
+margin:0rem 5rem;
+padding: 0rem 5rem;
+}
+.allblogs{
+  margin-top: 8vh;
+}
+.singleblog{
+  padding: 6vh 5vh;
+  transition: transform 2s;
+  text-decoration: none;
+}
+.singleblog p{
+  text-decoration: none;
+}
+
+.singleblog:hover {
+  border-style: solid;
+  border-radius: 10px;
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01); 
+}
+div.allblogs a{
+  text-decoration: none;
+
+}

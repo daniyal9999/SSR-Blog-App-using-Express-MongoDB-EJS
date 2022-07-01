@@ -1,0 +1,31 @@
+<%- include("../header.ejs") %>
+<style>
+  .login {
+    text-align: center;
+    padding:0rem 22rem;
+    margin:3rem;
+    
+  }
+  input{
+    width: 20%;
+  }
+ 
+  </style>
+  <div class="login">
+<h1>Login</h1>
+<form action="/users/login", method="post">
+    
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" name="email" placeholder="daniyal@gmail.com">
+    </div>
+  
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="1234">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a href="/blogs" class="btn btn-outline-secondary">Back</a>
+  </form>
+</div>

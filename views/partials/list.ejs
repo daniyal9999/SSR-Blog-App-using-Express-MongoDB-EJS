@@ -1,0 +1,28 @@
+ <%- include("../header.ejs") %>
+ <h1>Blogs list</h1> 
+
+ <a href="/blogs/add" class="btn btn-success float-right"> Add new blog</a><br>
+ <div class="allblogs">
+ <% if (blogs) { %>
+   <% blogs.forEach(blog => { %>
+
+
+    <div class="singleblog">
+     <h3 ><%= blog.title %></h3>
+     <p ><%= blog.body %></p>
+     
+  
+        <a href="/blogs/delete/<%= blog._id %>" class="btn btn-sm btn-outline-danger float-right">Delete</a>
+        <a href="/blogs/edit/<%= blog._id %>" class="btn btn-sm btn-outline-warning float-right">Edit</a>
+        <a href="/blogs/readlater/<%= blog._id %>" class="btn btn-sm btn-outline-info float-right">Add to Read Later</a>
+    
+      
+    </div>
+
+  
+   <% }) %>
+ <% } else { %>
+   <p>There are no blogs to display...</p>
+ <% } %>
+
+</div>

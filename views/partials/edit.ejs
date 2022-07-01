@@ -1,0 +1,16 @@
+ <%- include("../header.ejs") %>
+ <h1>Edit blog</h1> 
+
+ <form action="/blogs/edit/<%= blog._id %>" method="post">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" name="title" value= <%= blog.title %> >
+  </div>
+
+  <div class="form-group">
+    <label for="body">Body</label>
+    <input type="text" class="form-control" id="body" name="body" value= <%= blog.body %>>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
