@@ -1,7 +1,8 @@
 body {
   padding: 50px;
+  background-color: #f3f4f8;
   font: 14px ,"fantasy","Lucida Grande", Helvetica, Arial, sans-serif;
-  color: #00B7FF;
+  color: #009ddb;
 }
 
 h1 {
@@ -9,7 +10,7 @@ h1 {
 }
 
 h3{
-  color: #00B7FF;
+  color: #0098d4;
 }
 
 #footer {
@@ -18,9 +19,9 @@ h3{
   width: 100%;
 }
 .readlaterlist{
-
-margin:0rem 5rem;
-padding: 0rem 5rem;
+  
+  margin:0rem 5rem;
+  padding: 0rem 5rem;
 }
 .allblogs{
   margin-top: 8vh;
@@ -29,12 +30,14 @@ padding: 0rem 5rem;
   padding: 6vh 5vh;
   transition: transform 2s;
   text-decoration: none;
+  margin: 2em;
 }
 .singleblog p{
   text-decoration: none;
 }
 
 .singleblog:hover {
+  background-color: #eeeff6;
   border-style: solid;
   border-radius: 10px;
   -ms-transform: scale(1.01); /* IE 9 */
