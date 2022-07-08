@@ -4,7 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 // var logger = require('morgan');
 var mongoose = require('mongoose');
-const dburl = "mongodb+srv://dani123:dani123@blogscrud.oj7kp37.mongodb.net/?retryWrites=true&w=majority"
+require('dotenv').config();
+
+const dburl = process.env.URI;
 
 var indexRouter = require('./routes/index');
 var blogsRouter = require('./routes/blogs');
